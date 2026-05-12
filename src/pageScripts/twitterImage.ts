@@ -2,11 +2,6 @@ import type { Injection, InjectionHandler } from "./injection";
 
 type InjectionResult = string | undefined;
 
-interface RegExpGroups {
-  tweetId: string;
-  mediaId: string;
-}
-
 export const injection: Injection = (): InjectionResult => {
   const modal = document.querySelector("[style*=\"transition-duration:\"][style*=\"background-color:\"]");
 
@@ -30,12 +25,13 @@ export const injection: Injection = (): InjectionResult => {
 };
 
 export const handle: InjectionHandler = async (values, data) => {
-  if (data.groups === undefined) {
-    console.error("no capture groups");
+  const { tweetId, mediaId } = data.pathname.groups;
+
+  if (tweetId === undefined || mediaId === undefined) {
+    console.error("no named groups:", data);
     return;
   }
 
-  const { tweetId, mediaId } = data.groups as unknown as RegExpGroups;
   const src = values[0].result as InjectionResult;
 
   if (src === undefined) {
