@@ -20,6 +20,9 @@
     "downloads",
     "scripting"
   ],
+  "host_permissions": [
+    "*://x.com/*"
+  ],
   "browser_specific_settings": {
     "gecko": {
       "id": "{4af64eb1-8a3b-40a4-a288-9973d55e85e9}",
