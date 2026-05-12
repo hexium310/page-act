@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "Page act",
+  "description": "Executes script for page",
+  "version": "0.0.1",
+  "icons": {
+    "32": "web.svg",
+    "64": "web.svg"
+  },
+  "action": {
+    "default_icon": "web.svg"
+  },
+  "background": {
+    "type": "module",
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "permissions": [
+    "downloads",
+    "scripting"
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{4af64eb1-8a3b-40a4-a288-9973d55e85e9}",
+      "update_url": "https://github.com/hexium310/page-act/raw/master/updates.json"
+    }
+  }
+}
