@@ -3,7 +3,6 @@ import type { Injection, InjectionHandler } from "./injection";
 export interface PageMatchItem {
   name: string;
   urlPatterns: URLPattern[];
-  regexp: RegExp;
   handlers: {
     injection: Injection;
     handle: InjectionHandler;
