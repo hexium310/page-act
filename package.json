@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite build --mode development",
     "build": "tsgo && vite build",
+    "test": "vitest",
     "lint": "eslint --flag unstable_native_nodejs_ts_config .",
     "update-version": "node ./scripts/update-version.ts"
   },
@@ -17,6 +18,7 @@
     "@types/firefox-webext-browser": "^143.0.0",
     "@types/node": "^25.6.0",
     "@typescript/native-preview": "7.0.0-dev.20260502.1",
+    "@vitest/eslint-plugin": "^1.6.17",
     "eslint": "^10.3.0",
     "eslint-import-resolver-typescript": "^4.4.4",
     "eslint-plugin-import-x": "^4.16.2",
@@ -26,6 +28,7 @@
     "typescript-eslint": "^8.59.1",
     "vite": "^8.0.10",
     "vite-plugin-static-copy": "^4.1.0",
-    "vite-plugin-zip-pack": "^1.2.4"
+    "vite-plugin-zip-pack": "^1.2.4",
+    "vitest": "^4.1.6"
   }
 }

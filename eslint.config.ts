@@ -3,6 +3,7 @@ import { fileURLToPath } from "node:url";
 import { includeIgnoreFile } from "@eslint/compat";
 import js from "@eslint/js";
 import stylistic from "@stylistic/eslint-plugin";
+import vitest from "@vitest/eslint-plugin";
 import { defineConfig } from "eslint/config";
 import { importX } from "eslint-plugin-import-x";
 import globals from "globals";
@@ -96,6 +97,18 @@ export default defineConfig(
           caughtErrorsIgnorePattern: "^_",
         },
       ],
+    },
+  },
+  {
+    files: [
+      "**/*.test.{ts,tsx}",
+      "tests/**/*.ts",
+    ],
+    extends: [
+      vitest.configs.recommended,
+    ],
+    rules: {
+      "vitest/prefer-importing-vitest-globals": ["error"],
     },
   }
 );
