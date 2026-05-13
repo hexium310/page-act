@@ -1,4 +1,5 @@
 import type { Injection, InjectionHandler } from "./injection";
+import type { PageMatchItem } from "./pageMatch";
 
 type InjectionResult = string | undefined;
 
@@ -47,3 +48,21 @@ export const handle: InjectionHandler = async (values, data) => {
     filename: `twitter_${tweetId}_${mediaId}.${format}`,
   });
 };
+
+export const pageMatchItem = {
+  name: "twitterImage",
+  urlPatterns: [
+    new URLPattern({
+      hostname: "x.com",
+      pathname: "/(\\w+)/status/:tweetId(\\d+)/photo/:mediaId(\\d+)",
+    }),
+    new URLPattern({
+      hostname: "x.com",
+      pathname: "/(\\w+)/article/:tweetId(\\d+)/media/:mediaId(\\d+)",
+    }),
+  ],
+  handlers: {
+    injection: injection,
+    handle: handle,
+  },
+} satisfies PageMatchItem;
