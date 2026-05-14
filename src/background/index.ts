@@ -19,7 +19,7 @@ export const handleActionEvent: ActionEventListenerCallback = async (tab): Promi
 
   const result = await inject(tab.id, matched.injection, matched.data);
 
-  void matched.handle(result, matched.data);
+  void matched.handle(tab, result, matched.data);
 };
 
 setupAction(handleActionEvent);

@@ -17,11 +17,15 @@
     ]
   },
   "permissions": [
+    "tabs",
     "downloads",
     "scripting"
   ],
   "host_permissions": [
-    "*://x.com/*"
+    "*://x.com/*",
+    "*://*.amazon.co.jp/*",
+    "*://*.amazon.jp/*",
+    "*://*.amazon.com/*"
   ],
   "browser_specific_settings": {
     "gecko": {

@@ -25,7 +25,7 @@ export const injection: Injection = (): InjectionResult => {
   return src;
 };
 
-export const handle: InjectionHandler = async (values, data) => {
+export const handle: InjectionHandler = async (_tab, values, data) => {
   const { tweetId, mediaId } = data.pathname.groups;
 
   if (tweetId === undefined || mediaId === undefined) {
