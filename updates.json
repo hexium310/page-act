@@ -1,0 +1,12 @@
+{
+  "addons": {
+    "{4af64eb1-8a3b-40a4-a288-9973d55e85e9}": {
+      "updates": [
+        {
+          "version": "1.0.0",
+          "update_link": "https://github.com/hexium310/page-act/releases/download/1.0.0/page-act-1.0.0.xpi"
+        }
+      ]
+    }
+  }
+}

@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Page act",
   "description": "Executes script for page",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "icons": {
     "32": "web.svg",
     "64": "web.svg"
