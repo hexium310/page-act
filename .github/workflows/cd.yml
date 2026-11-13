@@ -28,7 +28,7 @@ jobs:
       - name: Build
         run: pnpm build
       - name: Release
-        uses: softprops/action-gh-release@v3.0.3
+        uses: softprops/action-gh-release@v3.0.4
         with:
           files: release/page-act-*.xpi
           fail_on_unmatched_files: true
