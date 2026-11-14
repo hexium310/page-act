@@ -197,8 +197,8 @@ importers:
         specifier: ^17.14.0
         version: 17.14.0
       rollup-plugin-license:
-        specifier: ^3.7.1
-        version: 3.7.1(picomatch@4.0.4)(rollup@2.79.2)
+        specifier: ^3.7.2
+        version: 3.7.2(picomatch@4.0.4)(rollup@2.79.2)
       type-fest:
         specifier: ^5.10.0
         version: 5.10.0
@@ -297,9 +297,6 @@ packages:
   '@jridgewell/resolve-uri@3.1.2':
     resolution: {integrity: sha512-bRISgCIjP20/tbWSPWMEi54QVPRZExkuD9lJL+UIxUKtwVJA8wW1Trb1jMs1RFXo1CBTNZ/5hpC9QvmKWdopKw==}
     engines: {node: '>=6.0.0'}
-
-  '@jridgewell/sourcemap-codec@1.5.5':
-    resolution: {integrity: sha512-cYQ9310grqxueWbl+WuIUIaiUaDcj7WOq5fVhEljNVgRfOUhY9fy2zTvfoqWsnebh8Sl70VScFbICvJnLKB0Og==}
 
   '@jridgewell/sourcemap-codec@1.6.0':
     resolution: {integrity: sha512-T7jf+5zgsZHwNJ4lvQ7/aezbyk0nNX+zJVWpmHA7VYsEx7a7qr5Rg5IbtJFqkgze5Y2sruq1RUY8Q837Od7iFw==}
@@ -1212,8 +1209,8 @@ packages:
     engines: {node: ^20.19.0 || >=22.12.0}
     hasBin: true
 
-  rollup-plugin-license@3.7.1:
-    resolution: {integrity: sha512-FcGXUbAmPvRSLxjVdjp/r/MUtKBlttVQd+ApUyvKfREnsoAfAZA6Ic2fE1Tz4RL0f9XqEQU9UIRNUMdtQtliDw==}
+  rollup-plugin-license@3.7.2:
+    resolution: {integrity: sha512-xsEifZTR9xIFzgXqhNEoWmdM8mwLyEynXr50krGTCv/OhBAXS8+YFDWpD7pdT3Q1DZdt9T9yu7sACEfYiRdq8A==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       rollup: ^1.0.0 || ^2.0.0 || ^3.0.0 || ^4.0.0
@@ -1532,8 +1529,6 @@ snapshots:
   '@humanwhocodes/retry@0.4.3': {}
 
   '@jridgewell/resolve-uri@3.1.2': {}
-
-  '@jridgewell/sourcemap-codec@1.5.5': {}
 
   '@jridgewell/sourcemap-codec@1.6.0': {}
 
@@ -2216,7 +2211,7 @@ snapshots:
 
   magic-string@0.30.21:
     dependencies:
-      '@jridgewell/sourcemap-codec': 1.5.5
+      '@jridgewell/sourcemap-codec': 1.6.0
 
   magic-string@1.4.5:
     dependencies:
@@ -2332,7 +2327,7 @@ snapshots:
       '@rolldown/binding-win32-arm64-msvc': 1.2.18
       '@rolldown/binding-win32-x64-msvc': 1.2.18
 
-  rollup-plugin-license@3.7.1(picomatch@4.0.4)(rollup@2.79.2):
+  rollup-plugin-license@3.7.2(picomatch@4.0.4)(rollup@2.79.2):
     dependencies:
       commenting: 1.1.0
       fdir: 6.5.0(picomatch@4.0.4)
